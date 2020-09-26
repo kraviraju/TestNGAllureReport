@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyStore Test Suite" >
+    <listeners>
+        <listener class-name="Reports.TestListener"/>
+        <listener class-name="Reports.AnnotationTransformer"/>
+    </listeners>
+    <test name="LoginTest">
+        <classes>
+            <class name="TestCases.InValid_HomePageTitle"/> 
+            <class name="TestCases.Valid_LoginTest"/> 
+            <class name="TestCases.InValid_LoginTest"/> 
+        </classes>
+    </test>
+</suite>

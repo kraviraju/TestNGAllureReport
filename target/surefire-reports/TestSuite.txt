@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 119.927 s <<< FAILURE! - in TestSuite
+InvalidLoginTest(TestCases.InValid_HomePageTitle)  Time elapsed: 6.251 s  <<< FAILURE!
+java.lang.AssertionError: expected [My Store -1] but found [My Store]
+	at TestCases.InValid_HomePageTitle.InvalidLoginTest(InValid_HomePageTitle.java:30)
+

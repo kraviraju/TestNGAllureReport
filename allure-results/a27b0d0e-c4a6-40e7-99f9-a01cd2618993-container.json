@@ -1,0 +1,1 @@
+{"uuid":"a27b0d0e-c4a6-40e7-99f9-a01cd2618993","name":"MyStore Test Suite","children":["bf976d59-2529-4141-bcb9-43f14791021a"],"befores":[{"name":"cleanAllureResults","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1601121479169,"stop":1601121479385}],"afters":[],"links":[],"start":1601121479122,"stop":1601121594936}

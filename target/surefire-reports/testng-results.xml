@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="6" passed="2" failed="1" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Open My Store Application - Base URL : http://automationpractice.com/index.php]]>
+    </line>
+    <line>
+      <![CDATA[Verify Home page Title [My Store -1] - Fail]]>
+    </line>
+    <line>
+      <![CDATA[Open My Store Application - Base URL : http://automationpractice.com/index.php]]>
+    </line>
+    <line>
+      <![CDATA[Verify Home page Title [My Store -1] - Fail]]>
+    </line>
+    <line>
+      <![CDATA[Open My Store Application - Base URL : http://automationpractice.com/index.php]]>
+    </line>
+    <line>
+      <![CDATA[Go to Login Page]]>
+    </line>
+    <line>
+      <![CDATA[Login success with username [hotcoolden@gmail.com] & password [tanuja] ]]>
+    </line>
+    <line>
+      <![CDATA[Verify My Account page Title [My account - My Store]]]>
+    </line>
+    <line>
+      <![CDATA[Verify logout page Title [Login - My Store] - Success]]>
+    </line>
+    <line>
+      <![CDATA[Open My Store Application - Base URL : http://automationpractice.com/index.php]]>
+    </line>
+    <line>
+      <![CDATA[Go to Login Page]]>
+    </line>
+    <line>
+      <![CDATA[Login failed [Authentication failed.] with username [hotcoolden@gmail.com] & password [afsdfdfsd] ]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-09-26T11:57:59Z" name="MyStore Test Suite" finished-at="2020-09-26T11:59:52Z" duration-ms="113066">
+    <groups>
+    </groups>
+    <test started-at="2020-09-26T11:57:59Z" name="LoginTest" finished-at="2020-09-26T11:59:52Z" duration-ms="113066">
+      <class name="TestCases.InValid_LoginTest">
+        <test-method is-config="true" signature="BrowserSetup()[pri:0, instance:TestCases.InValid_LoginTest@6345e7b9]" started-at="2020-09-26T11:59:29Z" name="BrowserSetup" finished-at="2020-09-26T11:59:34Z" duration-ms="4953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetup -->
+        <test-method is-config="true" signature="methodLevelSetup()[pri:0, instance:TestCases.InValid_LoginTest@6345e7b9]" started-at="2020-09-26T11:59:34Z" name="methodLevelSetup" finished-at="2020-09-26T11:59:34Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method signature="InvalidLoginTest()[pri:0, instance:TestCases.InValid_LoginTest@6345e7b9]" started-at="2020-09-26T11:59:34Z" name="InvalidLoginTest" description="InValid Login Test" finished-at="2020-09-26T11:59:51Z" duration-ms="16972" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Open My Store Application - Base URL : http://automationpractice.com/index.php]]>
+            </line>
+            <line>
+              <![CDATA[Go to Login Page]]>
+            </line>
+            <line>
+              <![CDATA[Login failed [Authentication failed.] with username [hotcoolden@gmail.com] & password [afsdfdfsd] ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.InValid_LoginTest@6345e7b9]" started-at="2020-09-26T11:59:51Z" name="teardown" finished-at="2020-09-26T11:59:52Z" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases.InValid_LoginTest -->
+      <class name="TestCases.Valid_LoginTest">
+        <test-method is-config="true" signature="BrowserSetup()[pri:0, instance:TestCases.Valid_LoginTest@108bdbd8]" started-at="2020-09-26T11:58:28Z" name="BrowserSetup" finished-at="2020-09-26T11:58:32Z" duration-ms="4178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetup -->
+        <test-method signature="validLoginTest()[pri:0, instance:TestCases.Valid_LoginTest@108bdbd8]" started-at="2020-09-26T11:58:32Z" name="validLoginTest" description="Valid Login Test" finished-at="2020-09-26T11:59:25Z" duration-ms="52765" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Open My Store Application - Base URL : http://automationpractice.com/index.php]]>
+            </line>
+            <line>
+              <![CDATA[Go to Login Page]]>
+            </line>
+            <line>
+              <![CDATA[Login success with username [hotcoolden@gmail.com] & password [tanuja] ]]>
+            </line>
+            <line>
+              <![CDATA[Verify My Account page Title [My account - My Store]]]>
+            </line>
+            <line>
+              <![CDATA[Verify logout page Title [Login - My Store] - Success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="methodLevelSetup()[pri:0, instance:TestCases.Valid_LoginTest@108bdbd8]" started-at="2020-09-26T11:58:32Z" name="methodLevelSetup" finished-at="2020-09-26T11:58:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.Valid_LoginTest@108bdbd8]" started-at="2020-09-26T11:59:25Z" name="teardown" finished-at="2020-09-26T11:59:29Z" duration-ms="3466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases.Valid_LoginTest -->
+      <class name="TestCases.InValid_HomePageTitle">
+        <test-method is-config="true" signature="cleanAllureResults()[pri:0, instance:TestCases.InValid_HomePageTitle@de18f63]" started-at="2020-09-26T11:57:59Z" name="cleanAllureResults" finished-at="2020-09-26T11:57:59Z" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanAllureResults -->
+        <test-method is-config="true" signature="BrowserSetup()[pri:0, instance:TestCases.InValid_HomePageTitle@de18f63]" started-at="2020-09-26T11:57:59Z" name="BrowserSetup" finished-at="2020-09-26T11:58:07Z" duration-ms="8016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetup -->
+        <test-method is-config="true" signature="methodLevelSetup()[pri:0, instance:TestCases.InValid_HomePageTitle@de18f63]" started-at="2020-09-26T11:58:07Z" name="methodLevelSetup" finished-at="2020-09-26T11:58:07Z" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method signature="InvalidLoginTest()[pri:0, instance:TestCases.InValid_HomePageTitle@de18f63]" started-at="2020-09-26T11:58:07Z" name="InvalidLoginTest" description="InValid Login Test" finished-at="2020-09-26T11:58:20Z" duration-ms="12484" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [My Store -1] but found [My Store]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [My Store -1] but found [My Store]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at Pages.HomePage.verifyHomePageTitle(HomePage.java:50)
+at TestCases.InValid_HomePageTitle.InvalidLoginTest(InValid_HomePageTitle.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Open My Store Application - Base URL : http://automationpractice.com/index.php]]>
+            </line>
+            <line>
+              <![CDATA[Verify Home page Title [My Store -1] - Fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginTest -->
+        <test-method signature="InvalidLoginTest()[pri:0, instance:TestCases.InValid_HomePageTitle@de18f63]" started-at="2020-09-26T11:58:21Z" name="InvalidLoginTest" description="InValid Login Test" finished-at="2020-09-26T11:58:24Z" duration-ms="3083" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [My Store -1] but found [My Store]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [My Store -1] but found [My Store]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at Pages.HomePage.verifyHomePageTitle(HomePage.java:50)
+at TestCases.InValid_HomePageTitle.InvalidLoginTest(InValid_HomePageTitle.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Open My Store Application - Base URL : http://automationpractice.com/index.php]]>
+            </line>
+            <line>
+              <![CDATA[Verify Home page Title [My Store -1] - Fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginTest -->
+        <test-method is-config="true" signature="methodLevelSetup()[pri:0, instance:TestCases.InValid_HomePageTitle@de18f63]" started-at="2020-09-26T11:58:21Z" name="methodLevelSetup" finished-at="2020-09-26T11:58:21Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.InValid_HomePageTitle@de18f63]" started-at="2020-09-26T11:58:27Z" name="teardown" finished-at="2020-09-26T11:58:28Z" duration-ms="1092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases.InValid_HomePageTitle -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- MyStore Test Suite -->
+</testng-results>

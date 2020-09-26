@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MyStore Test Suite]">
+  <listeners>
+    <listener class-name="Reports.TestListener"/>
+    <listener class-name="Reports.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="LoginTest(failed)">
+    <classes>
+      <class name="TestCases.InValid_HomePageTitle">
+        <methods>
+          <include name="methodLevelSetup"/>
+          <include name="BrowserSetup"/>
+          <include name="InvalidLoginTest"/>
+          <include name="cleanAllureResults"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.InValid_HomePageTitle -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [MyStore Test Suite] -->
