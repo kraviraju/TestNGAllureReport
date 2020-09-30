@@ -3,13 +3,12 @@
 <suite name="MyStore Test Suite" >
     <listeners>
         <listener class-name="Reports.TestListener"/>
-        <listener class-name="Reports.AnnotationTransformer"/>
-    </listeners>
+    </listeners> 
     <test name="LoginTest">
         <classes>
-            <class name="TestCases.InValid_HomePageTitle"/> 
+            <!-- <class name="TestCases.InValid_HomePageTitle"/> -->
             <class name="TestCases.Valid_LoginTest"/> 
-            <class name="TestCases.InValid_LoginTest"/> 
+            <!-- <class name="TestCases.InValid_LoginTest"/> -->
         </classes>
     </test>
 </suite>

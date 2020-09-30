@@ -3,7 +3,7 @@ package Utilities;
 import org.apache.log4j.Logger;
 import org.testng.Reporter;
 
-import Reports.ExtentManager;
+
 
 
 
@@ -51,7 +51,7 @@ public class Log {
        
        Log.info("Message: " + message);
        Reporter.log(message);
-       ExtentManager.setReporter().setTestRunnerOutput(message);
+    //   ExtentManager.setReporter().setTestRunnerOutput(message);
 
    }
     

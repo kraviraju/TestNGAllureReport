@@ -1,5 +1,4 @@
 package Reports;
-import com.relevantcodes.extentreports.LogStatus;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -9,8 +8,6 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import Base.BaseSetUp;
 import Utilities.Log;
-import Reports.ExtentManager;
-import Reports.ExtentTestManager;
 public class TestListener extends BaseSetUp implements ITestListener {
 
 	private static String getTestMethodName(ITestResult iTestResult) {
@@ -44,24 +41,17 @@ public class TestListener extends BaseSetUp implements ITestListener {
     @Override
     public void onFinish(ITestContext iTestContext) {
         //System.out.println("I am in onFinish method " + iTestContext.getName());
-        //Do tier down operations for extentreports reporting!
-        ExtentTestManager.endTest();
-        ExtentManager.setReporter().flush();
     }
 
     @Override
     public void onTestStart(ITestResult iTestResult) {
        // System.out.println("I am in onTestStart method " +  getTestMethodName(iTestResult) + " start");
         Log.info(getTestMethodName(iTestResult) + " test is starting.");
-        //Start operation for extentreports.
-        ExtentTestManager.startTest(iTestResult.getMethod().getMethodName(),"");
     }
 
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
         //System.out.println("I am in onTestSuccess method " +  getTestMethodName(iTestResult) + " succeed");
-        //Extentreports log operation for passed tests.
-        ExtentTestManager.getTest().log(LogStatus.PASS, "Test passed");
     }
 
     @Override
@@ -85,16 +75,11 @@ public class TestListener extends BaseSetUp implements ITestListener {
         String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)driver).
                 getScreenshotAs(OutputType.BASE64);
 
-        //Extentreports log and screenshot operations for failed tests.
-        ExtentTestManager.getTest().log(LogStatus.FAIL,"Test Failed",
-                ExtentTestManager.getTest().addBase64ScreenShot(base64Screenshot));
     }
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
         //System.out.println("I am in onTestSkipped method "+  getTestMethodName(iTestResult) + " skipped");
-        //Extentreports log operation for skipped tests.
-        ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
     }
 
     @Override
